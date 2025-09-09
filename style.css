@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e6eaf8;
+}
+
+.card-users {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 700px;
+  max-width: 1200px;
+  width: 90%;
+  max-height: 90vh;
+  padding: 40px;
+}
+
+.titulo {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  color: #151b32;
+  font-family: Merriweather;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.user-space {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* se ajusta sozinho */
+  gap: 20px; /* espaçamento entre os cards */
+  margin-top: 20px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-label {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  gap: 0px;
+}
+
+.nav svg {
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 250px;
+  font-size: 14px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #151b32;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu a:hover {
+  border-radius: 8px;
+  background: #849fff;
+  padding: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fbfcff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  gap: 0px;
+  min-height: 120px;
+  max-width: 400px;
+  width: 100%;
+
+  height: 120px;
+  overflow: hidden;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px; /* espaço entre nome, cidade e tags */
+  margin-left: 15px;
+  max-height: 100px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.user-info h2 {
+  color: var(--151-b-32, #151b32);
+  font-family: Merriweather;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.local {
+  color: var(--151-b-32, #151b32);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+}
+
+.user-icon {
+  width: 107px;
+  height: 107px;
+  border-radius: 50%;
+  padding: 0px;
+}
+
+.user-icon img {
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap; /* quebra linha se tiver muitas tags */
+  gap: 8px; /* espaçamento entre as tags */
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.tags a {
+  display: flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--bfc-8-e-6, #bfc8e5);
+  background: #fff;
+  color: #516fd4;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
